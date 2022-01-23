@@ -18,7 +18,7 @@ helm repo update
 
 ```
 
-# Deploy Loki Stack (Loki, Promtail, Grafana, Prometheus) with persistent volume claim
+# Deploy Loki Stack (Loki, Promtail, Grafana) with persistent volume claim
 
 ```
 helm install loki-stack grafana/lokistack --values values.yaml -n loki --create-namespace
