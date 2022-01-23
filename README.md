@@ -25,6 +25,14 @@ helm install loki-stack grafana/lokistack --values values.yaml -n loki --create-
 
 ```
 
+# You can also use this command insted of writing values.yaml
+
+```
+helm upgrade --install loki grafana/loki-stack  --set grafana.enabled=true,prometheus.enabled=true,prometheus.alertmanager.persistentVolume.enabled=false,prometheus.server.persistentVolume.enabled=false,loki.persistence.enabled=true,loki.persistence.storageClassName=standard,loki.persistence.size=5Gi
+
+
+```
+
 To check loki whether it is deployed or not please run these command
 ```
 helm list
