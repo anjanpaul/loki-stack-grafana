@@ -1,0 +1,17 @@
+loki:
+  enabled: true
+  persistance:
+    enabled: true
+    storageClassName: standard
+    size: 1Gi
+
+promtail:
+  enabled: true
+
+grafana:
+  enabled: true
+  sidecar: 
+    datasources:
+      enabled: true
+  image:
+    tag: 7.5.0 
