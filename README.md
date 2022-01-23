@@ -37,7 +37,7 @@ kubectl -n loki get all
 For port forwarding use this command:
 
 ```
-kubect -n loki port-forward svc/loki-stack-grafana 3000:80
+kubectl -n loki port-forward svc/loki-stack-grafana 3000:80
 
 ```
 
